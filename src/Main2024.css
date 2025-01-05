@@ -1,0 +1,854 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #2C2C2C; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  background-color: #2C2C2C;  /* Charcoal gray background */
+  background-image: radial-gradient(circle, rgba(211, 211, 211, 0.3) 1px, transparent 1px);
+  background-size: 30px 30px;
+
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+  margin-top: 4rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-name {
+  color: #D4D4D4;
+  font-family: 'Montserrat';
+  margin-right: 3rem;
+}
+
+.hero-name span {
+  color: #00E7FF;
+}
+
+.hero-subtext {
+  color: #D4D4D4;
+  font-family: 'Roboto';
+}
+
+.hero-image {
+  width: 450px;
+  height: auto;
+
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-select: none;
+
+  margin-left: 2rem;
+}
+
+.typing-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-container span {
+  color: #00E7FF;
+  font-family: 'Montserrat';
+  font-size: 2rem;
+}
+
+.down-arrow-button {
+  background-color: transparent;
+  border: 1px solid #00E7FF;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.down-arrow {
+  color: #00E7FF;
+  font-size: 2rem;
+  margin: .5rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .hero-image {
+    width: 400px;
+    margin-left: 0;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+
+  .typing-container span {
+    font-size: 1.5rem;
+  }
+
+  .hero-text {
+    margin-top: -2rem;
+  }
+
+  .down-arrow-button {
+    margin-top: 4rem;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .hero-image {
+    width: 350px; 
+  }
+
+  .down-arrow-button {
+    margin-top: 5rem;
+    border-radius: 14px;
+  }
+
+}
+
+
+/** About me **/
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.about-me h1 {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  color: #00E7FF;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.about-me-skills {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-graph {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 2rem;
+
+  border: 1px solid #D4D4D4;
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  color: #00E7FF;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  width: 150%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #D4D4D4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-bar {
+  width: 200%;
+  background-color: #D4D4D4;
+  height: 100%;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #00E7FF;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  background-size: 50px 50px;
+}
+
+.about-me-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-info p {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  margin: 1rem;
+  max-width: 90%;
+}
+
+.about-me-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 65%;
+}
+
+.about-me-icon {
+  color: #00E7FF;
+  font-size: 3rem;
+  transition: color 0.3s;
+  border: 1px solid #00E7FF;
+  border-radius: 8px;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
+
+.about-me-icon:hover {
+  color: #00C6FF;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .about-me-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-me-skills {
+    width: 110%;
+    margin: 2rem 0;
+  }
+
+  .skill-name {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  .skill-bar {
+    width: 100%;
+  }
+
+  .about-me-info {
+    width: 90%;
+    margin-top: -2rem;
+  }
+
+  .about-me-info p {
+    font-size: 1.2rem;
+  }
+
+  .about-me-icons {
+    display: none;
+  }
+
+}
+
+
+/** Projects **/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.projects h1 {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  color: #00E7FF;
+}
+
+.project-showcase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 8rem;
+}
+
+.project-showcase .project-image {
+  width: 40%;
+  height: auto;
+}
+
+.project-showcase .project-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-showcase .project-name {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  color: #00E7FF;
+  margin: 0;
+}
+
+.project-showcase .project-tools {
+  font-family: 'Roboto';
+  font-size: 1rem;
+  color: #D4D4D4;
+  margin: 1rem 0 1rem 0;
+}
+
+.project-showcase .project-description {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  color: #D4D4D4;
+  margin: 0;
+  width: 80%;
+}
+
+.project-showcase .project-button {
+  background-color: #00E7FF;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.project-showcase .project-button:hover {
+  background-color: #00C6FF;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.project-list .project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.project-list .project {
+  border-bottom: 1px solid #D4D4D4;
+}
+
+.project-list .project-name {
+  font-family: 'Montserrat';
+  font-size: 2rem;
+  color: #00E7FF;
+  font-weight: bold;
+  width: 20%; /* Set the same width for alignment */
+}
+
+.project-list .project-tools,
+.project-list .project-description {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  color: #D4D4D4;
+  width: 35%; /* Set the same width for alignment */
+}
+
+.project-list .project-button {
+  background-color: #00E7FF;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .project-showcase {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-list {
+    margin-top: -4rem;
+  }
+
+  .project-showcase .project-image {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .image-bottom {
+    margin-top: 2rem;
+  }
+
+  .project-showcase .project-text {
+    width: 90%;
+  }
+
+  .project-showcase .project-name {
+    font-size: 2.2rem;
+  }
+
+  .project-showcase .project-tools {
+    font-size: 1rem;
+  }
+
+  .project-showcase .project-description {
+    font-size: 1.2rem;
+  }
+
+  .project-showcase .project-button {
+    font-size: 1.2rem;
+  }
+
+  .project-list .project-name {
+    font-size: 1.5rem;
+    width: 30%;
+  }
+
+  .project-list .project-description {
+    font-size: 1rem;
+    width: 50%;
+  }
+
+  .project-list .project-tools {
+    display: none;
+  }
+
+  .project-list .project-button {
+    font-size: 1rem;
+  }
+}
+
+
+/* ADVOCACY */
+
+.advocacy h1 {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  color: #00E7FF;
+  margin-bottom: 0;
+}
+
+.advocacy p {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+
+.advocacy-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.advocacy-card {
+  width: 20%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border: 1.5px solid #00E7FF;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.advocacy-card img {
+  width: 65%;
+  height: auto;
+}
+
+.advocacy-card h2 {
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  color: #00E7FF;
+  margin: 1rem 0 0 0;
+}
+
+.advocacy-card p {
+  font-family: 'Roboto';
+  font-size: 1rem;
+  color: #D4D4D4;
+  margin-bottom: 12px;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.advocacy-card a {
+  background-color: #00E7FF;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+
+
+/* CONTACT */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  margin: 4rem 0;
+  width: 100%;
+}
+
+.contact h1 {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  color: #00E7FF;
+  margin-bottom: 0rem;
+}
+
+.contact p {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-bottom: 5rem;
+  max-width: 80%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.contact-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26%;
+}
+
+.contact-email h2 {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  color: #00E7FF;
+  margin: 0;
+}
+
+.contact-email a {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  color: #D4D4D4;
+  margin: 1rem;
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 26%;
+}
+
+.contact-socials h2 {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  color: #00E7FF;
+  margin: 0;
+}
+
+.contact-socials a {
+  font-size: 1.5 rem;
+  color: #D4D4D4;
+  transition: color 0.3s;
+  margin: 1rem;
+}
+
+.contact-socials-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact-socials a:hover {
+  color: #00C6FF;
+}
+
+.contact-socials a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.contact-github {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26%;
+}
+
+.contact-github h2 {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  color: #00E7FF;
+  margin: 0;
+}
+
+.contact-github:hover {
+  color: #00C6FF;
+}
+
+.contact-github a {
+  color: #D4D4D4;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  margin: 1rem;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact p {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .contact-email {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .contact-email h2 {
+    font-size: 2rem;
+  }
+
+  .contact-email a {
+    font-size: 1.2rem;
+  }
+
+  .contact-socials {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .contact-socials h2 {
+    font-size: 2rem;
+  }
+
+  .contact-github {
+    width: 90%;
+  }
+
+  .contact-github h2 {
+    font-size: 2rem;
+  }
+
+  .contact-github a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #2C2C2C;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  border-top: 1px solid #D4D4D4;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.footer-left h1 {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  color: #00E7FF;
+  margin: 0;
+}
+
+.footer-left p {
+  margin: 1rem;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-links p {
+  margin: 1rem;
+}
+
+.footer-links a {
+  color: #00E7FF;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00C6FF;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  margin: 4rem 0;
+}
+
+.footer-icons a {
+  color: #00E7FF;
+  transition: color 0.3s;
+  font-size: 2.5rem;
+}
+
+.footer-icons a:hover {
+  color: #00C6FF;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    width: 90%;
+  }
+
+  .footer-right {
+    width: 90%;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-icons {
+    width: 60%;
+  }
+
+  .footer-icons a {
+    font-size: 2rem;
+  }
+  
+}
