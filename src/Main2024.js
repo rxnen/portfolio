@@ -112,7 +112,7 @@ function Main2024() {
           </div>
           <div className="about-me-icons">
             <FontAwesomeIcon icon={faMedal} className="about-me-icon" />
-            <a href="https://github.com/BobBrown1" target="_blank" rel="noreferrer">
+            <a href="https://github.com/rxnen" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faLaptopCode} className="about-me-icon" />
             </a>
             <a href="https://open.spotify.com/user/eszcqv55x8d9h5w80xa2ricls?si=8f0cf1d04ed64953" target="_blank" rel="noreferrer">
@@ -291,8 +291,8 @@ function Main2024() {
             </div>
             <div className="contact-github">
               <h2>GitHub</h2>
-              <a href="https://www.github.com/BobBrown1" target="_blank" rel="noreferrer" className="contact-link">
-                BobBrown1
+              <a href="https://www.github.com/rxnen" target="_blank" rel="noreferrer" className="contact-link">
+                rxnen
               </a>
             </div>
 
@@ -328,7 +328,7 @@ function Main2024() {
             <a href="https://www.linkedin.com/in/ronen-jain-8a2860290/" target="_blank" rel="noreferrer" className="footer-icon">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://www.github.com/BobBrown1" target="_blank" rel="noreferrer" className="footer-icon">
+            <a href="https://www.github.com/rxnen" target="_blank" rel="noreferrer" className="footer-icon">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
