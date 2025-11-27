@@ -2,7 +2,7 @@ import './App.css';
 import { useRef, useEffect } from 'react';
 import Typed from "typed.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faMedal, faLaptopCode, faHeadphones, faHandshake, faGuitar, faDog, faBaseball} from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faMedal, faLaptopCode, faHeadphones, faHandshake, faGuitar, faDog, faBaseball, faCode, faLaptop} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -49,13 +49,26 @@ function App() {
             <div class="typing-container">
               <span ref={el}></span>
             </div>
+            <div className="hero-buttons">
+              <a href="#projects" className="hero-button">
+                <FontAwesomeIcon icon={faCode} className="hero-button-icon" />
+                View Projects
+              </a>
+              <a href="#about-me" className="hero-button">
+                <FontAwesomeIcon icon={faLaptop} className="hero-button-icon" />
+                About Me
+              </a>
+              <a href="#contact" className="hero-button">Contact</a>
+            </div>
           </div>
           <img src={"/assets/PersonalVector-2.png"} alt="Ronen" className="hero-image" />
         </div>
 
-        <button className="down-arrow-button" onClick={scrollDown}>
-          <FontAwesomeIcon icon={faArrowDown} className="down-arrow" />
-        </button>
+        <div className="down-arrow-container">
+          <button className="down-arrow-button" onClick={scrollDown}>
+            <FontAwesomeIcon icon={faArrowDown} className="down-arrow" />
+          </button>
+        </div>
 
 
         <div id="about-me" className="about-me">
@@ -128,12 +141,12 @@ function App() {
           <h1>Projects</h1>
           <div className="project-showcase">
 
-            <img src={"/assets/coming-soon.jpg"} alt="Stealth Startup" className="project-image image-top" />
+            <img src={"/assets/gandf-logo.png"} alt="GandF Logo" className="project-image image-top" />
             <div className="project-text">
-              <h2 className="project-name">Stealth Project</h2>
+              <h2 className="project-name">Grievers and Friends</h2>
               <p className="project-tools">React · AWS · Python</p>
               <p className="project-description">Collaborating closely with the founder, UX designer, and artist, I serve as the lead (and solo) developer for an e-commerce platform dedicated to providing emotional support to families grieving the loss of a child.</p>
-              <a href="/" target="_blank" rel="noreferrer" className="project-button">Coming Soon</a>
+              <a href="https://www.grieversandfriends.com/" target="_blank" rel="noreferrer" className="project-button">View Project</a>
             </div>
           </div>
           <div className="project-showcase">
