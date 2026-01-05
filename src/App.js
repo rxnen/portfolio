@@ -246,7 +246,7 @@ function App() {
 
             <div className="footer-left">
               <h1>Ronen Jain</h1>
-              <p>© 2024-2025 Ronen Jain</p>
+              <p>© 2024-2026 Ronen Jain</p>
             </div>
 
             <div className="footer-right">
