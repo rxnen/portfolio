@@ -2,7 +2,7 @@ import './App.css';
 import { useRef, useEffect } from 'react';
 import Typed from "typed.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faMedal, faLaptopCode, faHeadphones, faHandshake, faGuitar, faDog, faBaseball, faCode, faLaptop} from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faMedal, faLaptopCode, faHeadphones, faHandshake, faGuitar, faDog, faBaseball, faCode, faLaptop, faLink} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -123,15 +123,12 @@ function App() {
             </div>
           </div>
           <div className="about-me-icons">
-            <FontAwesomeIcon icon={faMedal} className="about-me-icon" />
             <a href="https://github.com/rxnen" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faLaptopCode} className="about-me-icon" />
             </a>
             <a href="https://open.spotify.com/user/eszcqv55x8d9h5w80xa2ricls?si=8f0cf1d04ed64953" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faHeadphones} className="about-me-icon" />
             </a>
-            <FontAwesomeIcon icon={faHandshake} className="about-me-icon" />
-            <FontAwesomeIcon icon={faGuitar} className="about-me-icon" />
             <FontAwesomeIcon icon={faDog} className="about-me-icon" />
             <FontAwesomeIcon icon={faBaseball} className="about-me-icon" />
           </div>
@@ -262,8 +259,8 @@ function App() {
           </div>
 
           <div className="footer-icons">
-            <a href="https://www.instagram.com/ronen.j" target="_blank" rel="noreferrer" className="footer-icon">
-              <FontAwesomeIcon icon={faInstagram} />
+            <a href="https://www.ronenjain.com" target="_blank" rel="noreferrer" className="footer-icon">
+              <FontAwesomeIcon icon={faLink} />
             </a>
             <a href="https://www.linkedin.com/in/ronen-jain-8a2860290/" target="_blank" rel="noreferrer" className="footer-icon">
               <FontAwesomeIcon icon={faLinkedin} />
