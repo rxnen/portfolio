@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     typed.current = new Typed(el.current, {
       strings: [
-        "High School Student",
+        "Incoming Uni Student",
         "Developer",
         "Tech Enthusiast",
         "Volunteer",
@@ -116,8 +116,8 @@ function App() {
             </div>
             <div className="about-me-info">
               <p>
-              I enjoy programming web, software, and mobile applications to solve genuine problems or (most of the time) for no reason at all.<br /><br />
-              I'm also a full-time high school student, a tennis player, an avid rock and metal listener, and love volunteer work.<br /><br />
+              I enjoy programming web, software, and mobile applications to solve genuine problems (and occasionally just for fun).<br /><br />
+              I'm also an incoming Informatics student at the University of Washington, a tennis player, an avid rock and metal listener, and love volunteer work.<br /><br />
               I've been programming since 7th grade, have interned with the Philadelphia Phillies R&D department, developed an award-winning app, and am currently interested in coding for positive-impact businesses and organizations.<br /><br />
               </p>
             </div>
@@ -137,19 +137,29 @@ function App() {
         <div id="projects" className="projects">
           <h1>Projects</h1>
           <div className="project-showcase">
+            <div className="project-text">
+              <h2 className="project-name">Open Parcel</h2>
+              <p className="project-tools"><span className="project-tools-list">React · Python · GeoPandas · ArcGIS</span><span className="project-date">June 2026 - Present</span></p>
+              <p className="project-description">Building an open-source civic tech platform that aggregates public land parcel, zoning, and environmental data with strategies used by successful tiny house villages to help communities identify land for affordable housing projects.</p>
+              <span className="project-button project-button-disabled">Coming Soon</span>
+            </div>
+            <img src={"/assets/open-parcel.png"} alt="Open Parcel Logo" className="project-image image-top" />
+          </div>
+          <div className="project-showcase">
 
             <img src={"/assets/gandf-logo.png"} alt="GandF Logo" className="project-image image-top" />
             <div className="project-text">
               <h2 className="project-name">Grievers and Friends</h2>
-              <p className="project-tools">React · AWS · Python  |  Aug. 2024 - Present</p>
+              <p className="project-tools"><span className="project-tools-list">React · AWS · Python</span><span className="project-date">Aug. 2024 - Present</span></p>
               <p className="project-description">Collaborating closely with the founder, UX designer, and artist, I serve as the lead (and solo) developer for an e-commerce platform dedicated to providing emotional support to families grieving the loss of a child.</p>
+              <p className="project-currently"><strong>Currently:</strong> Building an AI-powered book manager to generate custom pet illustrations and automate new book design.</p>
               <a href="https://www.grieversandfriends.com/" target="_blank" rel="noreferrer" className="project-button">View Project</a>
             </div>
           </div>
           <div className="project-showcase">
               <div className="project-text">
                 <h2 className="project-name">Tiny Village Spirit</h2>
-                <p className="project-tools">HTML/CSS · Javascript  | Sep. 2023 - Present</p>
+                <p className="project-tools"><span className="project-tools-list">HTML/CSS · Javascript</span><span className="project-date">Sep. 2023 - Present</span></p>
                 <p className="project-description">Designed, built, and currently manage the website for Tiny Village Spirit, a Bay Area nonprofit working to end the homeless crisis.</p>
                 <a href="https://tinyvillagespirit.org" target="_blank" rel="noreferrer" className="project-button">View Project</a>
               </div>
@@ -160,7 +170,7 @@ function App() {
               <img src={"/assets/eldersafe.png"} alt="Tiny Village Spirit Website" className="project-image image-top" />
               <div className="project-text">
                 <h2 className="project-name">ElderSafe</h2>
-                <p className="project-tools">React Native · Javascript · CSS  |  Jul. 2023 - 2024</p>
+                <p className="project-tools"><span className="project-tools-list">React Native · Javascript · CSS</span><span className="project-date">Jul. 2023 - 2024</span></p>
                 <p className="project-description">Developed ElderSafe, a mobile app that allows seniors to improve the safety of their homes through room evaluations and personalized product suggestions.</p>
                 <a href="https://eldersafe.ronenjain.com" target="_blank" rel="noreferrer" className="project-button">View Project</a>
               </div>
@@ -170,17 +180,17 @@ function App() {
           <div className="project-list">
             <div className="project">
               <a href="https://sheets.ronenjain.com" target="_blank" rel="noreferrer" className="project-name">Sheet2Feed</a>
-              <p className="project-tools">React · Firebase · Google Sheets API  |  2023</p>
+              <p className="project-tools"><span className="project-tools-list">React · Firebase · Google Sheets API</span><span className="project-date">2023</span></p>
               <p className="project-description">Developed a web app that allows users to create and manage web feeds by connecting their Google Sheets.</p>
             </div>
             <div className="project">
                 <a href="https://headlines.ronenjain.com" target="_blank" rel="noreferrer" className="project-name">Headline or Headlie</a>
-                <p className="project-tools">React · ChatGPT API  |  2023</p>
+                <p className="project-tools"><span className="project-tools-list">React · ChatGPT API</span><span className="project-date">2023</span></p>
                 <p className="project-description">Developed a Wordle-like game where users guess whether news headlines are real or generated by ChatGPT.</p>
             </div>
             <div className="project">
                 <a href="https://vinyl.ronenjain.com" target="_blank" rel="noreferrer" className="project-name">Record Player Visualizer</a>
-                <p className="project-tools">Python Flask · HTML/CSS · Spotify API  |  2022</p>
+                <p className="project-tools"><span className="project-tools-list">Python Flask · HTML/CSS · Spotify API</span><span className="project-date">2022</span></p>
                 <p className="project-description">
                   Developed a web app that connects to a user's Spotify account and displays the currently playing song on a record player.
                 </p>
@@ -188,7 +198,7 @@ function App() {
          
             <div className="project">
                 <a href="https://pitcher.ronenjain.com" target="_blank" rel="noreferrer" className="project-name">Pitcher Predictor</a>
-                <p className="project-tools">Python Flask · MLB Stats API  |  2022</p>
+                <p className="project-tools"><span className="project-tools-list">Python Flask · MLB Stats API</span><span className="project-date">2022</span></p>
                 <p className="project-description">
                   Developed a web app that predicts the starting pitchers of upcoming baseball games based on previous games.
                 </p>
@@ -202,7 +212,7 @@ function App() {
           <h1>Contact Me</h1>
 
           <p>
-            I'm always open to new opportunities and collaborations. If you are in need of a developer for any positive-impact projects, I would love to help out (for free, of course). Don't hesitate to ask!
+            I'm always open to new opportunities and collaborations. If you are in need of a developer for any positive-impact projects, I would love to help out. Don't hesitate to ask!
           </p>
 
           <div className="contact-info">

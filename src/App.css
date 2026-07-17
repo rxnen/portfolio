@@ -455,13 +455,15 @@ html {
 .project-showcase .project-image {
   width: 40%;
   height: auto;
+  margin: 0 5%;
 }
 
 .project-showcase .project-text {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .project-showcase .project-name {
@@ -478,11 +480,28 @@ html {
   margin: 1rem 0 1rem 0;
 }
 
+.project-tools .project-date {
+  margin-left: 1.5rem;
+}
+
+.project-tools .project-date::before {
+  content: '|';
+  margin-right: 1.5rem;
+}
+
 .project-showcase .project-description {
   font-family: 'Roboto';
   font-size: 1.5rem;
   color: #D4D4D4;
   margin: 0;
+  width: 80%;
+}
+
+.project-showcase .project-currently {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  color: #D4D4D4;
+  margin: 1rem 0 0 0;
   width: 80%;
 }
 
@@ -501,6 +520,12 @@ html {
 
 .project-showcase .project-button:hover {
   background-color: #00C6FF;
+}
+
+.project-showcase .project-button-disabled,
+.project-showcase .project-button-disabled:hover {
+  background-color: #5A5A5A;
+  cursor: default;
 }
 
 .project-list {
